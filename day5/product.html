@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <style>
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      background-color:rgb(225, 225, 225);
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+      
+      
+    }
+    .product{
+      border:2px solid black;
+      width:300px;
+      text-align:center;
+      margin-bottom:30px;
+      padding:20px;
+      border-radius:10px;
+      box-sizing:border-box;
+      
+
+
+    }
+    .product img{
+      border-radius:10px;
+      width:100%;
+      height: 160px;
+      object-fit:cover;
+    }
+    .product button{
+      background-color:orange;
+      border:none;
+      width: 90%;
+      height:40px;
+      border-radius:15px;
+      padding:5px;
+      box-sizing:border-box;
+      font-style:bold;
+    }
+    .product button:hover{
+      background-color:rgb(227, 155, 83);
+      color:white;
+      cursor:pointer;
+    }
+    .product:hover{
+      box-shadow:4px 4px 8px rgb(59, 57, 57);
+      transform:scale(1.05);
+      transition:1s;
+      background-color:beige;
+    }
+
+  
+  </style>
+</head>
+<body>
+  <div class="product">
+    <img src="https://images.pexels.com/photos/8470712/pexels-photo-8470712.jpeg" height="250px" width="250px">
+    <h2>Earphone</h2>
+    <p>Price: Rs.2000</p>
+    <button>Buy Now</button>
+  </div>
+  <div class="product">
+    <img src="https://images.pexels.com/photos/5793947/pexels-photo-5793947.jpeg" height="250px" width="250px">
+    <h2>Laptop</h2>
+    <p>Price: Rs.36000</p>
+    <button>Buy Now</button>
+  </div>
+  <div class="product">
+    <img src="https://images.pexels.com/photos/14666598/pexels-photo-14666598.jpeg" height="250px" width="250px">
+    <h2>Bracelet</h2>
+    <p>Price: Rs.5000</p>
+    <button>Buy Now</button>
+  </div>
+  <div class="product">
+    <img src="https://media.istockphoto.com/id/1355125086/photo/indian-handloom-sarees-with-vibrant-colours-and-beautiful-designs.jpg?b=1&s=612x612&w=0&k=20&c=be16FKroo087KKQlXFtFYqc6N4kf1iWPx-d3HnkBIpk=" height="250px" width="250px">
+    <h2>Saree</h2>
+    <p>Price: Rs.3000</p>
+    <button>Buy Now</button>
+  </div>
+</body>
+</html>
