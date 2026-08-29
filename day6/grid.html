@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  
+  <style>
+    .box{
+      background-color:rgb(188, 87, 87);
+      border:1px solid #0b0909;
+      color:white;
+      text-align:center;
+    }
+    .products{
+      display:grid;
+      grid-template-columns:repeat(6, 1fr);
+      gap:30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="products">
+    <div class="box">Cakes</div>
+    <div class="box">Cookies</div>
+    <div class="box">Pastries</div>
+    <div class="box">Breads</div>
+    <div class="box">Doughnuts</div>
+    <div class="box">Muffins</div>
+  </div>
+</body>
+</html>
