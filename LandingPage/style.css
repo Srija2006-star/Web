@@ -1,0 +1,479 @@
+   body{
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+    }
+    nav{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color:white;
+     box-sizing: border-box;
+     padding: 10px 20px;
+     flex-wrap: wrap;
+     border-bottom: 1px solid rgb(187,151,63);
+     flex-wrap:wrap;
+    }
+    .logo h1{
+     margin:0;
+     color:rgb(187,151,63);
+     font-family:Georgia, serif;
+    }
+    .top{
+     display: flex;
+     gap: 40px;
+     flex-wrap:wrap;
+    }
+    .top a{
+     color:black;
+     text-decoration: none;
+     font-size: 14px;
+     font-weight: bold;
+    }
+    .top a:hover{
+     color:rgb(187,151,63);
+     transition: 0.3s;
+     transform: scale(1.1);
+    }
+    .shop{
+     display: flex;
+     align-items: center;
+     gap: 6px;
+     background-color: rgb(187,151, 63);
+     height: 30px;
+     border-radius: 5px;
+     cursor: pointer;
+     padding: 5px;
+     box-sizing:border-box;
+     flex-wrap:wrap;
+    }
+    .shop:hover{
+     transform: scale(1.1);
+    }
+   .shop i{
+     color: white;
+    }
+    .shop button{
+     border: none;
+     background-color:rgb(187, 151, 63);
+     color: white;
+    }
+    .shop button:hover{
+     cursor: pointer;
+    }
+    .Banner{
+      background-image:url('./ChatGPT\ Image\ Sep\ 2\,\ 2026\,\ 10_48_57\ AM.png');
+      background-size: cover;
+      background-position:center;
+      background-repeat: no-repeat;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      padding: 20px;
+      box-sizing: border-box;
+      flex-wrap:wrap;
+    }
+    .Banner p{
+      margin:0;
+    }
+    .first_line{
+      display: flex;
+      gap: 20px;
+      font-size: 20px;
+      font-family: Georgia, serif;
+      color:rgb(246, 246, 244);
+      font-weight: bold;
+      padding: 10px 20px;
+      flex-wrap:wrap;
+    }
+    .second_line{
+      font-family: Georgia, serif;
+    }
+    .third_line p{
+      font-size: 14px;
+      color:rgb(251, 251, 249);
+      font-weight: bold;
+    }
+    .fourth_line{
+      display: flex;
+      flex-wrap:wrap;
+      gap: 20px;
+    }
+    .fourth_line button{
+      border: 1px solid rgb(187, 151, 63);
+      color:rgb(7, 7, 7);
+      background-color:transparent;
+      padding: 10px 20px;
+      border-radius: 5px;
+      height: 40px;
+      width: 200px;
+      font-weight: bold;
+    }
+    .fourth_line button:hover{
+      cursor: pointer;
+      background-color:rgb(187, 151, 63);
+      color:white;
+      transform: scale(1.1);
+    }
+    .featured-collections{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap:wrap;
+      margin-top: 40px;
+      gap: 10px;
+    }
+    .featured-collections h2{
+      font-family: Arial, sans-serif;
+      margin:0;
+      font-size: 35px;
+    }
+    .featured-collections p{
+      color:rgb(187, 151, 63);
+      margin:0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .items{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      margin: 25px 70px;
+      background-color:white;
+      box-sizing:border-box;
+    }
+    .Necklace, .Earrings, .Bracelet, .Ring{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color:white;
+      height: 520px;
+      border-radius: 10px;
+      border: 1px solid rgb(224, 223, 218);
+      box-shadow: 4px 4px 8px rgb(96, 95, 95);
+      flex-wrap:wrap;
+    }
+    .Necklace:hover, .Earrings:hover, .Bracelet:hover, .Ring:hover{
+      transform: scale(1.05);
+      transition: 1s;
+    }
+    .Necklace img, .Earrings img, .Bracelet img, .Ring img{
+      border-radius: 10px;
+      width: 100%;
+      object-fit: cover;
+      height: 300px;
+    }
+    .Necklace button,.Earrings button,.Bracelet button,.Ring button{
+      border:1px solid rgb(187, 151, 63);
+      color:rgb(187, 151, 63);
+      background-color:white;
+      font-size: 14px;
+      height: 40px;
+      font-weight: bold;
+      width: 200px;
+      border-radius: 5px;
+    }
+    .Necklace button:hover,.Earrings button:hover,.Bracelet button:hover,.Ring button:hover{
+      cursor: pointer;
+      transform: scale(1.1);
+      background-color:rgb(187, 151, 63);
+      color:white;
+    }
+    .why_section{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      margin-top:60px;
+      padding: 20px;
+      box-sizing:border-box;
+      background-color:rgb(231, 210, 156);
+      width: 100%;
+    }
+    .why_Elan h1{
+      font-family: Georgia, serif;
+      font-size: 30px;
+    }
+    .why_Elan p{
+      margin:0;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      color:rgb(53, 52, 52);
+    }
+    .why_Elan,.Handcrafted, .Premium_Materials, .Timeless_Designs{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      border-right: 1px solid rgb(187, 151, 63);
+      padding: 8px;
+      box-sizing: border-box;
+      flex-wrap:wrap;
+    }
+    .Secure_Delivery{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+      flex-wrap:wrap;
+    }
+    .Handcrafted h3, .Premium_Materials h3, .Timeless_Designs h3, .Secure_Delivery h3{
+      font-family: Georgia, serif;
+      font-size: 20px;
+    }
+    .Handcrafted p, .Premium_Materials p, .Timeless_Designs p, .Secure_Delivery p{
+      margin:0;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color:rgb(53, 52, 52);
+    }
+    .Our_Collection{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 60px;
+      flex-wrap:wrap;
+    }
+    .Our_Collection h2{
+      margin:0;
+      font-family: Georgia, serif;
+      font-size: 40px;
+    }
+    .Our_Collection p{
+      margin:0;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color:rgb(187, 151, 63);
+      font-weight: bold;
+    }
+    .Features{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+      margin: 25px 30px;
+      background-color: rgb(255, 255, 255);
+      box-sizing: border-box;
+      height: 80px;
+      width: 90%;
+      flex-wrap:wrap;
+    }
+    .FNecklaces, .FEarrings, .FBracelets, .FRings{
+      display: flex;
+      align-items: center;
+      background-color:rgb(255, 255, 255);
+      justify-content: center;
+      width: 250px;
+      height: 60px;
+      border-right: 1px solid rgb(187, 151, 63);
+      margin-left: 0;
+      box-sizing: border-box;
+      flex-wrap:wrap;
+      
+    }
+    .FNecklaces img, .FEarrings img, .FBracelets img, .FRings img{
+      object-fit: cover;
+    }
+    .FBracelets{
+      border-right: none;
+    }
+    .FBracelets:hover, .FNecklaces:hover, .FEarrings:hover, .FRings:hover{
+      transform: scale(1.1);
+      transition: 0.3s;
+    }
+    .reviews{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 60px;
+      flex-wrap:wrap;
+    }
+    .hreview h2{
+      margin:0;
+      font-family: Georgia, serif;
+      font-size: 30px;
+    }
+    .hreview p{
+      margin-left:5px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color:rgb(187, 151, 63);
+      font-weight: bold;
+      text-align: center;
+    }
+    .mainreviews{
+      background-color: rgb(255, 255, 255);
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+    }
+    .review1, .review2, .review3{
+      display:grid;
+      grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 2px;
+      background-color:white;
+      height: 200px;
+      border-radius: 10px;
+      border: 1px solid rgb(224, 223, 218);
+      box-shadow: 4px 4px 8px rgb(96, 95, 95);
+    }
+    .review1 p, .review2 p, .review3 p{
+      margin:0;
+      padding: 20px;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color:rgb(53, 52, 52);
+    }
+    .review1 h4, .review2 h4, .review3 h4{
+      margin:0;
+      padding: 20px;
+      box-sizing: border-box;
+      font-family: Georgia, serif;
+      font-size: 14px;
+      color:rgb(187, 151, 63);
+    }
+    .review1:hover, .review2:hover, .review3:hover{
+      transform: scale(1.05);
+      transition: 0.5s;
+    }
+    .Banner2{
+      background-image:url('./footer.png');
+      background-size: cover;
+      background-position:center;
+      background-repeat: no-repeat;
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+      flex-wrap:wrap;
+      margin-top: 60px;
+      height: 350px;
+    }
+    .Bannertext h1{
+      font-family: Georgia, serif;
+      font-size: 40px;
+      color:rgb(255, 255, 255);
+    }
+    .Bannertext p{
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color:rgb(255, 255, 255);
+    }
+    .Bannerbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgb(187, 151, 63);
+    height: 50px;
+    width: 160px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.3s;
+    flex-wrap:wrap;
+  }
+
+  .Bannerbutton i{
+    color: white;
+    font-size: 15px;
+  }
+
+  .Bannerbutton button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .Bannerbutton:hover{
+    background-color: rgb(160, 126, 45);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  }
+  .end{
+      background-color: rgb(29, 6, 10);
+      height: 200px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+  .footer_content1{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px;
+      box-sizing: border-box;
+      flex-wrap:wrap;
+  }
+  .footer_content1 h2{
+      margin:0;
+      font-family: Georgia, serif;
+      font-size: 30px;
+      color:rgb(187, 151, 63);
+  }
+  .footer_content1 p{
+      margin:0;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color:rgb(210, 204, 204);
+  }
+  .social_icons{
+      display: flex;
+      gap: 15px;
+      color:rgb(255, 255, 255);
+  }
+  .fcollections h2, .fabout h2, .fsupport h2, .fsubscribe h2{
+      margin:0;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color:rgb(255, 255, 255);
+  }
+  .fcollections p, .fabout p, .fsupport p, .fsubscribe p{
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color:rgb(210, 204, 204);
+  }
+  .fsubscribe input{ 
+      padding: 8px 10px; 
+      border-radius: 5px; 
+      border: none; 
+      width: 200px; 
+      box-sizing: border-box; 
+      background-color: white;
+      font-size: 13px;
+      outline: none;
+  }
+
+  .fsubscribe input:focus{
+      outline: 1px solid rgb(187, 151, 63);
+  }
+
+  .fsubscribe button{ 
+      border: none; 
+      background-color: rgb(187, 151, 63); 
+      color: white; 
+      padding: 8px 16px; 
+      border-radius: 5px; 
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+  }
+  .fsubscribe button:hover{
+      background-color: rgb(160, 126, 45);
+      transform: scale(1.05);
+      transition: 0.3s;
+ }
