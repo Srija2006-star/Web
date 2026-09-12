@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function greet(){
+      console.log("Hello World")
+      console.log(
+     `
+     hi guys
+    how u doing`)
+    }
+    greet()
+    function greet1(name,age){
+      console.log(`My name is ${name} and my age is ${age}`)
+    }
+    greet1("john",21)
+    function TotalBill(price,tip){
+      return price+tip
+    }
+    let total=TotalBill(100,20)
+    console.log(total)
+    let abc=()=>{
+      console.log("Hello Arrow function")
+    }
+    abc()
+  </script>
+</body>
+</html>
