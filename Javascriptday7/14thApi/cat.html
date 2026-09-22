@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img id="cat" height="100" width="100">
+  <button id="btn">Click</button>
+  <script>
+    const catimg=document.getElementById("cat")
+    function getImage(){
+       fetch("https://api.thecatapi.com/v1/images/search")
+       .then(response=>response.json())
+       .then(data=>catimg.src=data[0].url)
+       .catch(error=>console.log("Error correction",error))
+    }
+   const b= document.getElementById("btn")
+   b.addEventListener("click",getImage)
+  </script>
+</body>
+</html>

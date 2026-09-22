@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img id="coffee" height="100" width="100">
+  <button id="btn">Get Coffee</button>
+  <script>
+    const c=document.getElementById("coffee")
+    function getCoffee(){
+        fetch("https://api.sampleapis.com/coffee/hot")
+        .then(response=>response.json())
+        .then(data=>c.src=data[3].image)
+        .catch(error=>console.log("Error correction",error))
+    }
+    const b=document.getElementById("btn")
+    b.addEventListener("click",getCoffee)
+  </script>
+</body>
+</html>
