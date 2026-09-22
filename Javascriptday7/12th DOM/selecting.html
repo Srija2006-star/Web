@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">Hello World</p>
+  <div class="abc">Goodbye</div>
+  <div class="abc">Hi</div>
+  <p>I am a paragraph</p>
+  <script>
+   const para= document.getElementById("demo")
+   console.log(para)
+   const para1= document.getElementsByClassName("abc")
+   console.log(para1)
+   console.log(para1[0])
+   const para2= document.getElementsByTagName("p")
+   console.log(para2)
+   console.log(para2[1])
+   const q=document.querySelector(".abc")
+    console.log(q)
+    const q1=document.querySelectorAll(".abc")
+    console.log(q1)
+    console.log(q1[1])
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="abc" style="background-color: red; height: 100px; width: 100px; border: 1px solid black;">Hello</div>
+  <script>
+   const i =document.getElementById("abc")
+   i.addEventListener('mouseover',function(x){
+            i.style.backgroundColor="blue"
+   })
+   i.addEventListener('mouseout',function(x){
+            i.style.backgroundColor="aqua"
+   })
+  </script>
+</body>
+</html>

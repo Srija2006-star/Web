@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">Hello World</p>
+  <button id="btn">Login</button>
+  <div id="abc">Goodbye</div>
+  
+  <script>
+    const para=document.getElementById("demo")
+    const p=para.textContent
+    console.log(p)
+    para.textContent="Hi"
+    console.log(para.textContent)
+    const b=document.getElementById("btn")
+    b.textContent="Logout"
+    const d=document.getElementById("abc")
+    d.innerHTML="<h1>Ki</h1>"
+    d.innerHTML=`<h1>Ki</h1>
+                 <img src='https://images.pexels.com/photos/12127761/pexels-photo-12127761.jpeg' height='100px' width='100px'>
+                    <h1>lmao</h1>
+                    `
+    para.style.color="red"
+    para.style.backgroundColor="yellow"
+    para.style.fontSize="30px"
+    para.style.textAlign="center"
+  </script>
+</body>
+</html>
