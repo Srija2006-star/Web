@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #movie{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:50px;
+      margin-top:300px;
+      box-sizing:border-box;
+    }
+    #movieName{
+      width:300px;
+      height:30px;
+      font-size:20px;
+      padding:5px;
+      border-radius:5px;
+      border:1px solid #ccc;
+      color:#333;
+    }
+    #btn{
+      width:200px;
+      height:40px;
+      font-size:20px;
+      border-radius:5px;
+      border:none;
+      background-color:#a5e5a5;
+      color:#493599;
+      cursor:pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="movie">
+    <input id="movieName" placeholder="Enter movie name">
+    <button id="btn">Get Movie</button>
+  </div>
+  <script>
+    const d=document.getElementById("movie")
+    const i=document.getElementById("movieName")
+    const b=document.getElementById("btn")
+    b.addEventListener("click",function(){
+      getMovie(i.value)
+    })
+    async function getMovie(movieName){
+      let url=`http://www.omdbapi.com/?t=${movieName}&i=tt3896198&apikey=6ace57cf`
+      try{
+      let response=await fetch(url)
+      let data=await response.json()
+      d.innerHTML=`<h1>${data.Title}</h1>
+                   <h3>${data.Year}</h3> 
+                    <h3>${data.Genre}</h3>
+                    <img src="${data.Poster}" alt="${data.Title}">`
+    }
+    catch(error){
+      console.log("Error correction",error)
+    }
+  }
+</script>
+</body>
+</html>
