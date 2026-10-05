@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    body{
+      margin:0px;
+      padding:0px;
+      box-sizing:border-box;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      background-color:#e9e5ef;
+    }
+    .navbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      background-color:#2a0f61;
+      padding:20px;
+      height:60px;
+      box-sizing:border-box;
+      flex-wrap:wrap;
+    }
+    .navbar h1{
+      color:white;
+      font-size:25px;
+      margin:0px;
+    }
+    .nav_links{
+      display:flex;
+      gap:20px;
+    }
+    .nav_links a{
+      text-decoration:none;
+      color:white;
+      font-size:15px;
+    }
+    .navbar i{
+      color:white;
+      font-size:14px;
+    }
+    .home-icon:hover{
+      transition:0.3s;
+      transform:scale(1.1);
+    }
+    .home-icon a:hover{
+      color:#885bd6;
+    }
+    .weather-icon:hover{
+      transition:0.3s;
+      transform:scale(1.1);
+    }
+    .weather-icon a:hover{
+      color:#885bd6;
+    }
+    .movie-icon:hover{
+      transition:0.3s;
+      transform:scale(1.1);
+    }
+    .movie-icon a:hover{
+      color:#885bd6;
+    }
+    .container{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      margin-top:60px;
+      flex-wrap:wrap;
+    }
+    .container h1{
+     color:#320580;
+     font-size:50px;
+     margin:0px;
+    }
+    .container p{
+      color:#43335c;
+      font-size:17px;
+    }
+    .main{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-top:50px;
+      flex-wrap:wrap;
+      gap:50px;
+    }
+    .weather{
+      background-color:#2a0f61;
+      height:250px;
+      width:400px;
+      padding:20px;
+      box-sizing:border-box;
+      border-radius:10px;
+      background-image:url('https://images.pexels.com/photos/13705278/pexels-photo-13705278.jpeg');
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+    }
+    .weather h2{
+      color:rgb(23, 25, 87);
+    }
+    .weather p{
+      color:rgb(40, 42, 83);
+    }
+    .weather:hover{
+      transition:0.3s;
+      transform:scale(1.1);
+    }
+    .weather button{
+      background-color:#282560;
+      color:white;
+      border:none;
+      padding:10px 20px;
+      border-radius:5px;
+      cursor:pointer;
+      width:130px;
+    }
+    
+    .movie{
+      background-color:#2a0f61;
+      height:250px;
+      width:400px;
+      padding:20px;
+      box-sizing:border-box;
+      border-radius:10px;
+      background-image:url('https://images.pexels.com/photos/8590227/pexels-photo-8590227.jpeg');
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      
+    }
+    .movie h2{
+      color:rgb(23, 25, 87);
+    }
+    .movie p{
+      color:rgb(40, 42, 83);
+    }
+    .movie:hover{
+      transition:0.3s;
+      transform:scale(1.1);
+    }
+    .movie button{
+      background-color:#282560;
+      color:white;
+      border:none;
+      padding:10px 20px;
+      border-radius:5px;
+      cursor:pointer;
+      width:130px;
+    }
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1> 🌦️Sky & Screen</h1>
+    <div class="nav_links">
+     <div class="home-icon">
+      <i class="fa-solid fa-home"></i>
+      <a href="index.html">Home</a>
+     </div>
+     <div class="weather-icon">
+      <i class="fa-solid fa-cloud-sun"></i>
+      <a href="weather.html">Weather</a>
+     </div>
+     <div class="movie-icon">
+      <i class="fa-solid fa-film"></i>
+      <a href="movie.html">Movie</a>
+     </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>Explore the world </h1>
+    <h1>of weather and movies</h1>
+    <p>Get real time weather updates and discover your next favorite movie ,<br>all in one place.</p>
+  </div>
+  <div class="main">
+   <div class="weather">
+    <h2>Weather</h2>
+    <p>Check the weather in your city whether it's sunny, rainy, or snowy, we've got you covered with the perfect movie recommendations to complement the weather outside.</p>
+    <button>Explore</button>
+   </div>
+    <div class="movie">
+      <h2>Movie</h2>
+      <p></p>
+      <p>Our curated movie recommendations will help you find the ideal film to match the mood of the day and make your day even better.</p>
+      <button>Explore</button>
+  </div>
+</body>
+</html>
