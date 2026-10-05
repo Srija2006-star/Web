@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: #e9e5ef;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #2a0f61;
+      padding: 20px;
+      height: 60px;
+      box-sizing: border-box;
+      flex-wrap: wrap;
+    }
+
+    .navbar h1 {
+      color: white;
+      font-size: 25px;
+      margin: 0px;
+    }
+
+    .nav_links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav_links a {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+    }
+
+    .navbar i {
+      color: white;
+      font-size: 14px;
+    }
+
+    .home-icon:hover {
+      transition: 0.3s;
+      transform: scale(1.1);
+    }
+
+    .home-icon a:hover {
+      color: #885bd6;
+    }
+
+    .weather-icon:hover {
+      transition: 0.3s;
+      transform: scale(1.1);
+    }
+
+    .weather-icon a:hover {
+      color: #885bd6;
+    }
+
+    .movie-icon:hover {
+      transition: 0.3s;
+      transform: scale(1.1);
+    }
+
+    .movie-icon a:hover {
+      color: #885bd6;
+    }
+
+
+    /* Weather Section */
+
+    .weather-container {
+      text-align: center;
+      padding-top: 60px;
+    }
+
+    .weather-container h2 {
+      font-size: 40px;
+      color: #2a0f61;
+      margin-bottom: 10px;
+    }
+
+    .weather-container p {
+      color: #555;
+      font-size: 18px;
+    }
+
+    .search-box {
+      margin-top: 30px;
+    }
+
+    .search-box input {
+      width: 300px;
+      padding: 13px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .search-box button {
+      padding: 13px 20px;
+      margin-left: 8px;
+      border: none;
+      border-radius: 6px;
+      background-color: #2a0f61;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .search-box button:hover {
+      background-color: #885bd6;
+    }
+
+
+    /* Weather Card */
+
+    .weather-card {
+      width: 400px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .weather-card h2 {
+      color: #2a0f61;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .weather-icon-large {
+      font-size: 60px;
+      color: #885bd6;
+      margin-bottom: 15px;
+    }
+
+    .temperature {
+      font-size: 50px;
+      color: #2a0f61;
+      margin: 10px;
+    }
+
+    .condition {
+      font-size: 20px;
+      text-transform: capitalize;
+      color: #555;
+    }
+
+    .weather-details {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
+    .weather-details h4 {
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .weather-details p {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2a0f61;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+
+    <h1>🌦️Sky & Screen</h1>
+
+    <div class="nav_links">
+
+      <div class="home-icon">
+        <i class="fa-solid fa-home"></i>
+        <a href="index.html">Home</a>
+      </div>
+
+      <div class="weather-icon">
+        <i class="fa-solid fa-cloud-sun"></i>
+        <a href="weather.html">Weather</a>
+      </div>
+
+      <div class="movie-icon">
+        <i class="fa-solid fa-film"></i>
+        <a href="movie.html">Movie</a>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <div class="weather-container">
+
+    <h2>Check the Weather</h2>
+
+    <p>Enter a city name to know the current weather</p>
+
+    <div class="search-box">
+
+      <input type="text" id="cityInput" placeholder="Enter city name">
+
+      <button id="searchButton">
+        Search
+      </button>
+
+    </div>
+
+    <div class="weather-card">
+
+      <h2 id="cityName">Kolkata</h2>
+
+      <div class="weather-icon-large">
+        <i class="fa-solid fa-cloud-sun"></i>
+      </div>
+
+      <h3 class="temperature" id="temperature">
+        --°C
+      </h3>
+
+      <p class="condition" id="condition">
+        Weather Condition
+      </p>
+
+
+      <div class="weather-details">
+
+        <div>
+          <h4>Humidity</h4>
+          <p id="humidity">--%</p>
+        </div>
+
+        <div>
+          <h4>Wind Speed</h4>
+          <p id="wind">-- m/s</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script>
+
+    const button = document.getElementById('searchButton');
+
+    const input = document.getElementById('cityInput');
+
+    const cityName = document.getElementById('cityName');
+
+    const temperature = document.getElementById('temperature');
+
+    const condition = document.getElementById('condition');
+
+    const humidity = document.getElementById('humidity');
+
+    const wind = document.getElementById('wind');
+
+
+   async function getWeather(city) {
+
+    let locationUrl = `https://geocoding-api.open-meteo.com/v1/search?name=${city}&count=1`;
+
+    try {
+
+        let locationResponse = await fetch(locationUrl);
+
+        let locationData = await locationResponse.json();
+
+        let latitude = locationData.results[0].latitude;
+        let longitude = locationData.results[0].longitude;
+        let name = locationData.results[0].name;
+
+        let url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,relative_humidity_2m,wind_speed_10m`;
+
+        let response = await fetch(url);
+
+        let data = await response.json();
+
+        cityName.textContent = name;
+
+        temperature.textContent = `${data.current.temperature_2m}°C`;
+
+        humidity.textContent = `${data.current.relative_humidity_2m}%`;
+
+        wind.textContent = `${data.current.wind_speed_10m} km/h`;
+
+    }
+
+    catch (error) {
+
+        console.error("Error fetching weather:", error);
+
+    }
+
+}
+
+
+    button.addEventListener('click', function() {
+
+      getWeather(input.value);
+
+    });
+
+  </script>
+
+</body>
+</html>

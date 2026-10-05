@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <title>Document</title>
+  <style>
+    body{
+      margin:0px;
+      padding:0px;
+      box-sizing:border-box;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      background-color:#e9e5ef;
+    }
+    .navbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      background-color:#2a0f61;
+      padding:20px;
+      height:60px;
+      box-sizing:border-box;
+      flex-wrap:wrap;
+    }
+    .navbar h1{
+      color:white;
+      font-size:25px;
+      margin:0px;
+    }
+    .nav_links{
+      display:flex;
+      gap:20px;
+    }
+    .nav_links a{
+      text-decoration:none;
+      color:white;
+      font-size:15px;
+    }
+    .navbar i{
+      color:white;
+      font-size:14px;
+    }
+    .home-icon:hover{
+      transition:0.3s;
+      transform:scale(1.1);
+    }
+    .home-icon a:hover{
+      color:#885bd6;
+    }
+    .weather-icon:hover{
+      transition:0.3s;
+      transform:scale(1.1);
+    }
+    .weather-icon a:hover{
+      color:#885bd6;
+    }
+    .movie-icon:hover{
+      transition:0.3s;
+      transform:scale(1.1);
+    }
+    .movie-icon a:hover{
+      color:#885bd6;
+    }
+    .header{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      margin-top:50px;
+      font-size:25px;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      color:#2a0f61;
+      box-sizing:border-box;
+    }
+    .header h1{
+      margin:0px;
+    }
+    .search{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-top:30px;
+      gap:10px;
+    }
+    #searchInput{
+      padding:10px;
+      width:300px;
+      border-radius:5px;
+      border:none;
+      box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+    }
+    #searchButton{
+      padding:10px 20px;
+      border:none;
+      border-radius:5px;
+      background-color:#2a0f61;
+      color:white;
+      cursor:pointer;
+      box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+      width:130px;
+    }
+    .popular-movies {
+    text-align: center;
+    margin-top: 80px;
+    padding: 30px;
+}
+.popular-movies h2 {
+    font-size: 35px;
+    color: #32156b;
+    margin-bottom: 10px;
+}
+
+.popular-movies > p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.movie-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.movie-card {
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.movie-card:hover {
+    transform: translateY(-8px);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.movie-card h3 {
+    color: #32156b;
+    font-size: 18px;
+    margin: 15px 10px 8px;
+}
+
+.movie-card p {
+    color: #555;
+    margin-bottom: 15px;
+}
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1> 🌦️Sky & Screen</h1>
+    <div class="nav_links">
+     <div class="home-icon">
+      <i class="fa-solid fa-home"></i>
+      <a href="index.html">Home</a>
+     </div>
+     <div class="weather-icon">
+      <i class="fa-solid fa-cloud-sun"></i>
+      <a href="weather.html">Weather</a>
+     </div>
+     <div class="movie-icon">
+      <i class="fa-solid fa-film"></i>
+      <a href="movie.html">Movie</a>
+     </div>
+    </div>
+  </nav>
+  <div class="header">
+    <h1>Search Your</h1>
+    <h1>Favorite Movies</h1>
+  </div>
+  <div class="search">
+    <input placeholder="Search for a movie..." type="text" id="searchInput">
+    <button id="searchButton">Search</button>
+  </div>
+  <section class="popular-movies">
+    <h2>Popular Movies</h2>
+    <p>Explore some popular movies</p>
+
+    <div class="movie-container">
+
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg" alt="Deadpool & Wolverine">
+            <h3>Deadpool & Wolverine</h3>
+            <p>⭐ 8.0</p>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg" alt="Inception">
+            <h3>Inception</h3>
+            <p>⭐ 8.8</p>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" alt="Interstellar">
+            <h3>Interstellar</h3>
+            <p>⭐ 8.6</p>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRErvzi-28e-p5B_jrBUhoStBmYgUg2OliDZzZ8BmC_yA&s=10" alt="Titanic">
+            <h3>Titanic</h3>
+            <p>⭐ 7.9</p>
+        </div>
+
+    </div>
+</section>
+<script>
+  const button = document.getElementById('searchButton');
+  const input = document.getElementById('searchInput');
+  const s = document.querySelector('.popular-movies');
+
+  async function getmovie(input) {
+    let url = `http://www.omdbapi.com/?t=${input}&i=tt3896198&apikey=6ace57cf`;
+
+    try {
+      let response = await fetch(url);
+      let data = await response.json();
+
+      s.innerHTML = `
+        <div class="movie-card">
+          <img src="${data.Poster}" alt="${data.Title}">
+          <h3>${data.Title}</h3>
+          <p>⭐ ${data.imdbRating}</p>
+        </div>
+      `;
+
+    } catch (error) {
+      console.error('Error fetching movie data:', error);
+    }
+  }
+
+  button.addEventListener('click', function() {
+    getmovie(input.value);
+  });
+</script>
+</body>
+</html>
